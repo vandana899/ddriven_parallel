@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="mybrowser" value="chrome"/>
+  <test name="test1">
+    <parameter name="mybrowser" value="edge"/>
+    <classes>
+      <class name="parallel.testing.parallel_test"/>
+    </classes>
+  </test> <!-- test1 -->
+  <test name="test2">
+    <parameter name="mybrowser" value="chrome"/>
+    <classes>
+      <class name="parallel.testing.parallel_test"/>
+    </classes>
+  </test> <!-- test2 -->
+</suite> <!-- Failed suite [Suite] -->
